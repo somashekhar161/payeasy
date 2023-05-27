@@ -16,12 +16,269 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@font-face {
+  font-family: CircularTTBold;
+  src: url(../public/CircularStd-Bold.otf);
+}
+
+@font-face {
+  font-family: CircularTT;
+  src: url(../public/CircularStd-Light.otf);
+}
+
+html {
+  scroll-snap-type: y proximity;
+}
+
+section {
+  padding: 0rem 4rem;
+  scroll-snap-align: start;
+}
+
+/* nav bar style */
+.bold-font {
+  font-weight: bold;
+  font-family: CircularTT;
+}
+nav {
+  align-items: center;
+  display: flex;
+  color: aliceblue;
+  padding: 1rem 4rem;
+  background-color: #141414;
+}
+
+nav > ul {
+  width: 100vw;
+  display: flex;
+  gap: 5rem;
+  justify-content: flex-end;
+  align-items: center;
+  font-style: normal;
+  font-weight: 450;
+  font-size: 25px;
+}
+
+.download-btn {
+  border-radius: 4rem;
+  background: #fff;
+  color: #141414;
+  font-family: CircularTTBold;
+  font-weight: 700;
+  padding: 0.5rem 2rem;
+  font-weight: 700;
+  width: fit-content;
+}
+.logo {
+  transform: scale(1.2);
+}
+/*eof nav bar style */
+
+/* hero section  */
+.hero {
+  margin-top: -5rem;
+  background-color: #000000;
+  display: flex;
+
+  color: #fff;
+  height: 100vh;
+
+  align-items: center;
+}
+.hero > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.hero h1 {
+  font-family: CircularTTBold;
+  font-weight: 700;
+  font-size: 55px;
+  width: 90%;
+}
+.hero p {
+  font-family: CircularTT;
+  font-weight: 450;
+  font-size: 40px;
+  width: 90%;
+}
+.hero .download-btn {
+  font-size: 35px;
+  width: 70%;
+}
+.hero > div {
+  width: 50%;
+  padding: 0 3rem;
+}
+
+.circle {
+  background: #fff;
+  min-width: 20rem;
+  max-width: 20rem;
+  min-height: 20rem;
+  border-radius: 100%;
+}
+.hero .circleParent {
+  align-items: center;
+}
+/* eof hero section  */
+
+/* section 2 line */
+.section2 {
+  background-color: #136eb4;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  height: 100vh;
+  gap: 1rem;
+}
+.section2 > h1 {
+  padding-right: 4rem;
+  padding-top: 4rem;
+  margin-top: -4rem;
+  line-height: 129.03px;
+  font-size: 102px;
+  font-family: CircularTTBold;
+  font-weight: 700;
+}
+.section2:hover > h1 {
+  transform: translateY(4rem);
+
+  transition: 1s;
+}
+
+.section2 button {
+  font-size: 35px;
+}
+.process {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 6rem 4rem;
+  gap: 7rem;
+}
+.process > hr {
+  width: 8rem;
+  font-size: 30px;
+}
+.process .logo:hover {
+  transform: scale(1.8);
+  transition-duration: 0.5s;
+}
+.process hr:hover {
+  transform: scale(1.8);
+  transition-duration: 0.5s;
+}
+/*eof section 2 line */
+
+/* feature paralax */
+
+.feature-div {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+
+  background-color: #fff;
+}
+.feature-content {
+  width: 50%;
+}
+.feature-content > h1 {
+  font-family: CircularTT;
+  font-weight: 700;
+  font-size: 65px;
+}
+.feature-content > p {
+  font-family: CircularTT;
+  font-weight: 450;
+  font-size: 45px;
+  color: #555555;
+}
+.feature-div .feature-visual {
+  align-items: center;
+}
+.feature-visual div {
+  background-color: #555555;
+  min-width: 20rem;
+  max-width: 20rem;
+  min-height: 40rem;
+  border-radius: 4%;
+}
+
+/*eof feature paralax */
+
+/* section  after paralax */
+
+/* uses most of similar style from section2 class */
+.section2-2 {
+  justify-content: space-between;
+  padding-bottom: 4rem;
+}
+
+/*eof section  after paralax */
+
+/* about us */
+.about-us {
+  height: 150vh;
+  background-color: #000000;
+  color: white;
+  font-family: CircularTT;
+  font-weight: 450;
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.about-us h1 {
+  font-family: CircularTTBold;
+  font-size: 85px;
+}
+.stores {
+  display: flex;
+  gap: 4rem;
+}
+.app-store {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+#rating-value {
+  font-family: CircularTTBold;
+  font-weight: 700;
+  font-size: 155px;
+  height: fit-content;
+}
+
+.logo-btn {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+/* eof about us */
+
+/* testmonials */
+.Testamonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 4rem;
+  gap: 4rem;
+}
+
+footer {
+  scroll-snap-align: start;
+  height: 20vh;
+  display: flex;
+  background-color: #000000;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  font-family: CircularTTBold;
+  font-weight: 700;
+  font-size: 45px;
 }
