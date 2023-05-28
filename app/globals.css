@@ -27,8 +27,27 @@
 }
 
 html {
+  /* scroll snap */
   scroll-snap-type: y proximity;
 }
+
+/* scroll bar style */
+
+body::-webkit-scrollbar {
+  width: .1rem;               /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track {
+  background: #00000000;        /* color of the tracking area */
+}
+body::-webkit-scrollbar-thumb {
+  background-color: black;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 2px solid black;  /* creates padding around scroll thumb */
+}
+/* eof scroll bar style */
+
+
+
 
 section {
   padding: 0rem 4rem;
@@ -42,10 +61,12 @@ section {
 }
 nav {
   align-items: center;
+  height: fit-content;
   display: flex;
   color: aliceblue;
-  padding: 1rem 4rem;
-  background-color: #141414;
+  padding: 2rem 4rem;
+  background-color: #000000;
+  scroll-snap-align: start;
 }
 
 nav > ul {
@@ -93,7 +114,7 @@ nav > ul {
 .hero h1 {
   font-family: CircularTTBold;
   font-weight: 700;
-  font-size: 55px;
+  font-size: 3rem;
   width: 90%;
 }
 .hero p {
@@ -103,7 +124,7 @@ nav > ul {
   width: 90%;
 }
 .hero .download-btn {
-  font-size: 35px;
+  font-size: 2rem;
   width: 70%;
 }
 .hero > div {
@@ -136,8 +157,8 @@ nav > ul {
   padding-right: 4rem;
   padding-top: 4rem;
   margin-top: -4rem;
-  line-height: 129.03px;
-  font-size: 102px;
+  line-height: 8rem;
+  font-size: 6rem;
   font-family: CircularTTBold;
   font-weight: 700;
 }
@@ -156,11 +177,12 @@ nav > ul {
   align-content: center;
   align-items: center;
   padding: 6rem 4rem;
+  padding-bottom: 3rem;
   gap: 7rem;
 }
 .process > hr {
   width: 8rem;
-  font-size: 30px;
+  font-size: 2rem;
 }
 .process .logo:hover {
   transform: scale(1.8);
@@ -222,7 +244,7 @@ nav > ul {
 
 /* about us */
 .about-us {
-  height: 150vh;
+  height: fit-content;
   background-color: #000000;
   color: white;
   font-family: CircularTT;
@@ -273,6 +295,7 @@ nav > ul {
 footer {
   scroll-snap-align: start;
   height: 20vh;
+  padding: 4rem 4rem;
   display: flex;
   background-color: #000000;
   color: #fff;
