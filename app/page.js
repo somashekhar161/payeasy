@@ -12,7 +12,7 @@ export default function Home() {
           width="100"
         />
 
-        <ul>
+        <ul className="headerLinks">
           <li>Home</li>
           <li>About us</li>
           <li>Our Features</li>
@@ -37,7 +37,6 @@ export default function Home() {
           </h1>
           <div className="process">
             <Image
-              className="logo"
               src="/assets/faded_circle.png"
               alt="logo"
               height="50"
@@ -46,14 +45,12 @@ export default function Home() {
 
             <hr />
             <Image
-              className="logo"
               src="/assets/lock_closed.png"
               alt="logo"
               height="50"
               width="50"
             />
             {/* <Image
-              className="logo"
               src="/assets/line.png"
               alt="logo"
               height="50"
@@ -61,7 +58,6 @@ export default function Home() {
             /> */}
             <hr />
             <Image
-              className="logo"
               src="/assets/checkmark-circle.png"
               alt="logo"
               height="50"
@@ -126,6 +122,7 @@ export default function Home() {
               <Image
                 src={"/assets/rating.png"}
                 alt="rating"
+                className="rating-value-image"
                 height={300}
                 width={300}
               />
@@ -145,6 +142,7 @@ export default function Home() {
               <h1>play store</h1>
               <Image
                 src={"/assets/rating.png"}
+                className="rating-value-image"
                 alt="rating"
                 height={300}
                 width={300}
@@ -174,7 +172,7 @@ export default function Home() {
         </section>
       </main>
       <footer>
-        <h1>Made with ❤️ by bundlebuild_</h1>
+        Made with ❤️ by bundlebuild_
       </footer>
     </>
   );
