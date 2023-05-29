@@ -66,7 +66,14 @@ export default function Home() {
           </div>
           <button className="download-btn">Get Started</button>
         </section>
-        <section>
+        <div className="parallax_wrapper">
+        <section className="parallax_group">
+          <div className="base_layer parallax_layer-right">
+            <div className="feature-visual">
+              <div></div>
+            </div>
+          </div>
+          <div className="mid_layer parallax_layer-left"></div>
           <div className="feature-div">
             <div className="feature-content">
               <h1>Kakao Wallet</h1>
@@ -76,9 +83,6 @@ export default function Home() {
                 major public websites.
               </p>
             </div>
-            <div className="feature-visual">
-              <div></div>
-            </div>
           </div>
           <div className="feature-div">
             <div className="feature-content">
@@ -87,9 +91,6 @@ export default function Home() {
                 Shop today through KakaoTalkQuickly and easily look through
                 products offered on KakaoTalk's fourth tab, Kakao Shopping.
               </p>
-            </div>
-            <div className="feature-visual">
-              <div></div>
             </div>
           </div>
           <div className="feature-div">
@@ -101,11 +102,10 @@ export default function Home() {
                 customized theme and share it with friends
               </p>
             </div>
-            <div className="feature-visual">
-              <div></div>
-            </div>
           </div>
+          
         </section>
+        </div>
         <section className="section2 section2-2">
           <h1>
             Get interesting information, that your bank doesn’t otherwise give.
@@ -171,9 +171,7 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <footer>
-        Made with ❤️ by bundlebuild_
-      </footer>
+      <footer>Made with ❤️ by bundlebuild_</footer>
     </>
   );
 }
