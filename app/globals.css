@@ -196,22 +196,12 @@ nav > ul {
 
 /* feature paralax */
 
-.feature-div {
+.feature-content {
   height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 4rem;
- 
-  background-color: #ffffff00;
-
-}
-.feature-content {
-  width: 50%;
-  display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 15px;
-
 }
 .feature-content > h1 {
   font-family: CircularTT;
@@ -225,62 +215,29 @@ nav > ul {
   color: #555555;
 }
 
-.feature-visual div {
+.mobile-screen {
   background-color: #555555;
-  min-width: 15rem;
-  max-width: 15rem;
-  min-height: 30rem;
-
+  min-width: 17rem;
+  max-width: 17rem;
+  min-height: 35rem;
   border-radius: 4%;
 }
-.feature-visual {
+.mobile-sticky {
+  padding: 2rem;
   position: sticky;
-  top:100px;
- 
+  top: 110px;
+  transform: translateX(30%);
 }
 
-.parallax_group {
+.feature {
   position: relative;
-  height: 100vh;
-  transform-style: preserve-3d;
-  
-}
-.base_layer {
-  height: 200vh;
-  transform: translateZ(-300px) scale(2);
-  
-}
-.mid_layer {
-  transform: translateZ(0px);
-  
-}
-.parallax_wrapper {
-  height: fit-content;
-  overflow-x: hidden;
-  overflow-y: auto;
-  perspective: 300px;
-  
-}
-.parallax_wrapper::-webkit-scrollbar {
-  display: none;
-}
-.parallax_layer-left {
-  position: absolute;
-  inset: 0;
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
 }
-.parallax_layer-right {
-  position: absolute;
-  inset: 0;
-  right: 3rem;
-  top: -8rem;
-  
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
- 
+.feature-data {
+  width: 60%;
+}
+.feature-visual {
+  width: 40%;
 }
 /*eof feature paralax */
 

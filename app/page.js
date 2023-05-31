@@ -66,15 +66,9 @@ export default function Home() {
           </div>
           <button className="download-btn">Get Started</button>
         </section>
-        <div className="parallax_wrapper">
-        <section className="parallax_group">
-          <div className="base_layer parallax_layer-right">
-            <div className="feature-visual">
-              <div></div>
-            </div>
-          </div>
-          <div className="mid_layer parallax_layer-left"></div>
-          <div className="feature-div">
+
+        <section className="feature">
+          <div className="feature-data">
             <div className="feature-content">
               <h1>Kakao Wallet</h1>
               <p>
@@ -83,8 +77,7 @@ export default function Home() {
                 major public websites.
               </p>
             </div>
-          </div>
-          <div className="feature-div">
+
             <div className="feature-content">
               <h1>Kakao Shopping</h1>
               <p>
@@ -92,8 +85,7 @@ export default function Home() {
                 products offered on KakaoTalk's fourth tab, Kakao Shopping.
               </p>
             </div>
-          </div>
-          <div className="feature-div">
+
             <div className="feature-content">
               <h1>Theme</h1>
               <p>
@@ -103,9 +95,14 @@ export default function Home() {
               </p>
             </div>
           </div>
-          
+
+          <div className="feature-visual">
+            <div className="mobile-sticky">
+              <div className="mobile-screen"></div>
+            </div>
+          </div>
         </section>
-        </div>
+
         <section className="section2 section2-2">
           <h1>
             Get interesting information, that your bank doesn’t otherwise give.
