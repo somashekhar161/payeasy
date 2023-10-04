@@ -6,7 +6,7 @@ export default function Home() {
       <nav>
         <Image
           className="logo"
-          src="/payeasylogo.png"
+          src="./payeasylogo.png"
           alt="logo"
           height="100"
           width="100"
@@ -37,7 +37,7 @@ export default function Home() {
           </h1>
           <div className="process">
             <Image
-              src="/assets/faded_circle.png"
+              src="./assets/faded_circle.png"
               alt="logo"
               height="50"
               width="50"
@@ -45,20 +45,20 @@ export default function Home() {
 
             <hr />
             <Image
-              src="/assets/lock_closed.png"
+              src="./assets/lock_closed.png"
               alt="logo"
               height="50"
               width="50"
             />
             {/* <Image
-              src="/assets/line.png"
+              src="./assets/line.png"
               alt="logo"
               height="50"
               width="50"
             /> */}
             <hr />
             <Image
-              src="/assets/checkmark-circle.png"
+              src="./assets/checkmark-circle.png"
               alt="logo"
               height="50"
               width="50"
