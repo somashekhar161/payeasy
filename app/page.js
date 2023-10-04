@@ -117,7 +117,7 @@ export default function Home() {
               <h1 id="rating-value">4.8</h1>
               <h1>app store</h1>
               <Image
-                srt={"./assets/rating.png"}
+                src={"./assets/rating.png"}
                 alt="rating"
                 className="rating-value-image"
                 height={300}
