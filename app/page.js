@@ -37,7 +37,7 @@ export default function Home() {
           </h1>
           <div className="process">
             <Image
-              src="./assets/faded_circle.png"
+              src="../public/assets/faded_circle.png"
               alt="logo"
               height="50"
               width="50"
@@ -45,20 +45,20 @@ export default function Home() {
 
             <hr />
             <Image
-              src="./assets/lock_closed.png"
+              src="../public/assets/lock_closed.png"
               alt="logo"
               height="50"
               width="50"
             />
             {/* <Image
-              src="./assets/line.png"
+              src="../public/assets/line.png"
               alt="logo"
               height="50"
               width="50"
             /> */}
             <hr />
             <Image
-              src="./assets/checkmark-circle.png"
+              src="../public/assets/checkmark-circle.png"
               alt="logo"
               height="50"
               width="50"
@@ -117,7 +117,7 @@ export default function Home() {
               <h1 id="rating-value">4.8</h1>
               <h1>app store</h1>
               <Image
-                src={"./assets/rating.png"}
+                srt={"../public/assets/rating.png"}
                 alt="rating"
                 className="rating-value-image"
                 height={300}
@@ -126,7 +126,7 @@ export default function Home() {
               <button className="download-btn logo-btn">
                 {" "}
                 <Image
-                  src={"./assets/apple.png"}
+                  src={"../public/assets/apple.png"}
                   alt="rating"
                   height={40}
                   width={40}
@@ -138,7 +138,7 @@ export default function Home() {
               <h1 id="rating-value">4.9</h1>
               <h1>play store</h1>
               <Image
-                src={"./assets/rating.png"}
+                src={"../public/assets/rating.png"}
                 className="rating-value-image"
                 alt="rating"
                 height={300}
@@ -147,7 +147,7 @@ export default function Home() {
               <button className="download-btn logo-btn">
                 {" "}
                 <Image
-                  src={"./assets/playstore.png"}
+                  src={"../public/assets/playstore.png"}
                   alt="rating"
                   height={40}
                   width={40}
@@ -164,7 +164,11 @@ export default function Home() {
               all the awesomeness. keep inventing !!"
             </p>
             <p>-sanjeev kataria</p>
-            <Image src={"./assets/switch-tiles.png"} height={100} width={100} />
+            <Image
+              src={"../public/assets/switch-tiles.png"}
+              height={100}
+              width={100}
+            />
           </div>
         </section>
       </main>
