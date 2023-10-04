@@ -117,7 +117,7 @@ export default function Home() {
               <h1 id="rating-value">4.8</h1>
               <h1>app store</h1>
               <Image
-                src={"/assets/rating.png"}
+                src={"./assets/rating.png"}
                 alt="rating"
                 className="rating-value-image"
                 height={300}
@@ -126,7 +126,7 @@ export default function Home() {
               <button className="download-btn logo-btn">
                 {" "}
                 <Image
-                  src={"/assets/apple.png"}
+                  src={"./assets/apple.png"}
                   alt="rating"
                   height={40}
                   width={40}
@@ -138,7 +138,7 @@ export default function Home() {
               <h1 id="rating-value">4.9</h1>
               <h1>play store</h1>
               <Image
-                src={"/assets/rating.png"}
+                src={"./assets/rating.png"}
                 className="rating-value-image"
                 alt="rating"
                 height={300}
@@ -147,7 +147,7 @@ export default function Home() {
               <button className="download-btn logo-btn">
                 {" "}
                 <Image
-                  src={"/assets/playstore.png"}
+                  src={"./assets/playstore.png"}
                   alt="rating"
                   height={40}
                   width={40}
@@ -164,7 +164,7 @@ export default function Home() {
               all the awesomeness. keep inventing !!"
             </p>
             <p>-sanjeev kataria</p>
-            <Image src={"/assets/switch-tiles.png"} height={100} width={100} />
+            <Image src={"./assets/switch-tiles.png"} height={100} width={100} />
           </div>
         </section>
       </main>
